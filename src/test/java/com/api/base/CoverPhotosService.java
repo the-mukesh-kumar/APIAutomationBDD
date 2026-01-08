@@ -17,6 +17,9 @@ public class CoverPhotosService extends BooksService{
         return postRequest(request, BASE_PATH);
     }
 
+    public Response getCoverPhotosByBookId(int id) {
+        return getRequest(BASE_PATH + "/books/covers/" + id);
+    }
     public Response getCoverPhotosById(int id) {
         return getRequest(BASE_PATH + "/" + id);
     }

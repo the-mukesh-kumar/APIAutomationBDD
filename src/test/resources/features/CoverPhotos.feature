@@ -14,3 +14,15 @@ Feature: CoverPhotos API
     When user creates a new cover photo
     Then response status should be 200
     And response body should not be empty
+
+  Scenario: Get cover photos by book id
+    Given the CoverPhotos API is available
+    When user fetches cover photos for book with id 1
+    Then response status should be 200
+    And response body should not be empty
+
+  Scenario: Get cover photo by id
+    Given the CoverPhotos API is available
+    When user fetches cover photo with id 1
+    Then response status should be 200
+    And response body should not be empty

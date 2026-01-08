@@ -37,4 +37,17 @@ private CoverPhotosRequest coverPhotosRequest;
   TestContext.response=  coverPhotosService.createCoverPhotos(coverPhotosRequest);
     }
 
+    @When("user fetches cover photos for book with id {int}")
+    public void user_fetches_cover_photos_for_book_with_id(Integer int1) {
+        TestContext.response=  coverPhotosService.getCoverPhotosByBookId(int1);
+
+    }
+
+    @When("user fetches cover photo with id {int}")
+    public void user_fetches_cover_photo_with_id(Integer int1) {
+        TestContext.response=  coverPhotosService.getCoverPhotosById(int1);
+    }
+
+
+
 }
