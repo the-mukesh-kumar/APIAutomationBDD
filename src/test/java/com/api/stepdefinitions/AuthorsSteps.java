@@ -3,20 +3,16 @@ package com.api.stepdefinitions;
 import com.api.base.AuthorsService;
 import com.api.context.TestContext;
 import com.api.models.request.CreateAuthorRequest;
-import com.api.models.request.UpdateActivityRequest;
 import com.api.models.request.UpdateAuthorRequest;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.response.Response;
-import org.junit.Assert;
 
 import java.awt.*;
 import java.util.Map;
 
 public class AuthorsSteps {
-    private Response response;
+
     private final AuthorsService authorsService = new AuthorsService();
     private CreateAuthorRequest createAuthorRequest;
     private UpdateAuthorRequest updateAuthorRequest;

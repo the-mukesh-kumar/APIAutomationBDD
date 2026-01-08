@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class ActivitiesSteps {
 
-    private Response response;
+
     private final ActivitiesService activitiesService = new ActivitiesService();
     private CreateActivityRequest createActivityRequest;
     private UpdateActivityRequest updateActivityRequest;
@@ -26,6 +26,8 @@ public class ActivitiesSteps {
 
     @Given("the Activities API is available")
     public void the_activities_api_is_available() {
+        System.out.println("the Activities API is available");
+
 
     }
     @Given("activity create payload is")
@@ -42,7 +44,10 @@ public class ActivitiesSteps {
 
     @Given("an activity with id {int} exists")
     public void an_activity_with_id_exists(Integer id) {
-        // For FakeRest API, we assume it exists
+        System.out.println("the Activities API is available");
+
+
+
     }
 
 
